@@ -1,0 +1,19 @@
+//Optional ID Map: https://pro-api.coinmarketcap.com/v1/cryptocurrency/map
+Metadata: https://pro-api.coinmarketcap.com/v2/cryptocurrency/info?id=1
+Price Details: https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?id=1
+
+https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?id=1
+
+('https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest?id=1',
+{
+    headers: {
+        'X-CMC_PRO_API_KEY': '1a645a66-088c-4914-80a2-500275b2bb2b',
+      },
+    });
+
+
+baseURL = "https://pro-api.coinmarketcap.com/v2"
+APIKEY = "1a645a66-088c-4914-80a2-500275b2bb2b"
+
+fetchPrice = "/cryptocurrency/quotes/latest?"  //id required
+fetchMetaData = "/cryptocurrency/info?" //id required

@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Banner from './Components/Banner';
+import CryptoSearch from './Components/CryptoSearch';
+import Navbar from './Components/Navbar';
+import PopularCrypto from './Components/PopularCrypto';
+import Footer from './Components/FooterSection.jsx';
+import requests from './request'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Banner fetchDetailsBanner = {requests.fetch4ForBanner} />
+      <PopularCrypto fetchPopular = {requests.fetch24hrChange} />
+      <CryptoSearch />
+      <Footer />
     </div>
   );
 }

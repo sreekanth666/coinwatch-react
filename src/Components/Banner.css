@@ -1,0 +1,20 @@
+.cBanner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.test {
+    width: 100%;
+}
+button {
+    margin: 1rem 0;
+    background-color: #7650ff !important;
+    color: #FFFDFE !important;
+}
+.cCards {
+    margin-top: 2rem;
+}
+.cCard {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}

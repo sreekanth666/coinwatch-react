@@ -1,0 +1,45 @@
+.cNavbar {
+    background-color: #FFFDFE;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 7rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+}
+.img-fluid {
+    height: 150%;
+}
+.cNavbar h3 {
+    margin: 0;
+    padding: 0.7rem;
+    font-weight: 400;
+}
+.cNavbar p {
+    margin: 0;
+    padding: 0.5rem;
+}
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+    .items {
+        display: none;
+    }
+    .cNavbar {
+        background-color: #FFFDFE;
+        padding: 2rem 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 7rem;
+    }
+}
